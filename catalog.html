@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nёrds catalog</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a class="icon-basket" href="#">КОРЗИНА</a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">СТУДИЯ</a></li>
+          <li><a href="index.html#references">КЛИЕНТЫ</a></li>
+          <li><a class="active" href="catalog.html">МАГАЗИН</a></li>
+          <li><a href="index.html#contacts">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+      <a class="header-logo" href="index.html">Nёrds</a>
+    </div>
+  </header>
+  <main>
+    <section class="welcome-block">
+      <div class="container">
+        <h1 class="shop-title">Магазин готовых шаблонов</h1>
+      </div>
+    </section>
+    <div class="container">
+      <div class="row catalog">
+        <div class="col col1">
+          <section class="sidebar">
+            <div class="filter-price">
+              <p class="filter-title">СТОИМОСТЬ:</p>
+              <div class="filter-slider">
+                <div class="range-control">
+                  <div class="scale"><div class="bar"></div></div>
+                  <div class="toggle min-toggle"></div>
+                  <div class="toggle max-toggle"></div>
+                </div>
+                <div class="price-control">
+                  от <input class="min-price" type="text" value="0">
+                  до <input class="max-price" type="text" value="15 000">
+                </div>
+              </div>
+            </div>
+            <form action="#" id="filter-form">
+              <div class="filter-grid">
+                <p class="filter-title">СЕТКА:</p>
+                <p><input type="radio" id="grid-1" name="radio-grid" checked><label class="icon-circle-dot" for="grid-1">Адаптивная</label></p>
+                <p><input type="radio" id="grid-2" name="radio-grid"><label class="icon-circle" for="grid-2">Фиксированная</label></p>
+                <p><input type="radio" id="grid-3" name="radio-grid"><label class="icon-circle" for="grid-3">Резиновая</label></p>
+              </div>
+              <div class="filter-specials">
+                <p class="filter-title">ОСОБЕННОСТИ:</p>
+                <p><input type="checkbox" id="checkbox1" name="checkbox-1" checked><label class="icon-check-on" for="checkbox1">Слайдер</label></p>
+                <p><input type="checkbox" id="checkbox2" name="checkbox-2"><label class="icon-check-off" for="checkbox2">Блок преимуществ</label></p>
+                <p><input type="checkbox" id="checkbox3" name="checkbox-3" checked><label class="icon-check-on" for="checkbox3">Новости</label></p>
+                <p><input type="checkbox" id="checkbox4" name="checkbox-4"><label class="icon-check-off" for="checkbox4">Галерея</label></p>
+                <p><input type="checkbox" id="checkbox5" name="checkbox-5"><label class="icon-check-off" for="checkbox5">Корзина</label></p>
+              </div>
+            </form>
+          </section>
+        </div>
+        <div class="col col2">
+          <div class="sorting">
+            <p class="sorting-title">СОРТИРОВАТЬ:</p>
+            <ul class="sorting-list">
+              <li><a href="#" class="sorting-text">ПО ЦЕНЕ</a></li>
+              <li><a href="#" class="sorting-text">ПО ТИПУ</a></li>
+              <li><a href="#" class="sorting-text">ПО НАЗВАНИЮ</a></li>
+            </ul>
+            <div class="sorting-controls">
+              <a href="#" class="icon-down-dir active"></a>
+              <a href="#" class="icon-up-dir"></a>
+            </div>
+          </div>
+          <div class="pagination">
+            <p class="active">1</p>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a class="next" href="#">СЛЕДУБЩАЯ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="map-wrapper">
+    <div id="map" style="width:100%; height:416px"></div>
+      <div class="col col1">
+        <div class="contacts">
+          <p class="contacts-title"><span>NЁRDS</span> DESIGN STUDIO</p>
+          <p class="contacts-address">191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+          <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
+          <a href="#" class="btn contacts-btn">Напишите нам</a>
+        </div>
+      </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col col1">
+          <div class="social-icons">
+            <a class="icon-vk" href="https://vk.com/" target="_blank">Vk</a>
+            <a class="icon-facebook" href="https://www.facebook.com/" target="_blank">Fb</a>
+            <a class="icon-instagram" href="https://instagram.com/" target="_blank">Insta</a>
+          </div>
+        </div>
+        <div class="col col2">
+          <p class="friendship-title">Давайте дружить, это выгодно!</p>
+          <p class="friendship-text">Скидка 10% для друзей из социальных сетей</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <form action="#" method="get" class="feedback-form">
+    <p class="name">
+      <label for="input-name">Ваше имя:</label><input type="text" id="input-name" name="feedback-name" placeholder="Представьтесь, пожалуйста">
+    </p>
+    <p class="e-mail">
+      <label for="input-e-mail">Ваш e-mail:</label><input type="email" id="input-e-mail" name="feedback-e-mail" placeholder="Для отправки ответа">
+    </p>
+    <p class="message-text">
+      <label for="input-message">Текст письма:</label><textarea id="input-message" name="feedback-message" placeholder="В свободной форме"></textarea>
+    </p>
+    <div class="form-btns">
+      <input type="submit" id="input-submit" name="feedback-submit" class="btn feedback-submit" value="Отправить">
+      <a href="#" class="btn feedback-cancel">Отмена</a>
+    </div>
+  </form>
